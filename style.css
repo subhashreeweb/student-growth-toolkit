@@ -5,12 +5,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
 }
 
 header {
-    background: #1e293b;
+    background: #0f172a;
     color: white;
     padding: 20px;
     text-align: center;
@@ -21,48 +22,69 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #cbd5e1;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: white;
 }
 
 .hero {
+    padding: 80px 20px;
     text-align: center;
-    padding: 60px 20px;
     background: white;
 }
 
 .hero h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #64748b;
 }
 
 .features {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .card {
     background: white;
-    width: 260px;
-    margin: 15px;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    width: 280px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
 }
 
 footer {
-    background: #1e293b;
+    background: #0f172a;
     color: white;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
 }
