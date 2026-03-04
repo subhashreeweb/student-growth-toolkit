@@ -13,3 +13,28 @@
 
 </body>
 </html>
+<h1>Simple Percentage Calculator</h1>
+
+<input type="number" id="num1" placeholder="Enter total marks">
+<input type="number" id="num2" placeholder="Enter obtained marks">
+
+<br><br>
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+    var total = document.getElementById("num1").value;
+    var obtained = document.getElementById("num2").value;
+
+    var percentage = (obtained / total) * 100;
+
+    document.getElementById("result").innerHTML =
+    "Your Percentage: " + percentage + "%";
+}
+</script>
+
+<br><br>
+<a href="index.html">Back to Home</a>
