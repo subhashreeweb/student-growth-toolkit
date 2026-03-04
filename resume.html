@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Resume Builder</h1>
+</header>
+
+<section class="hero">
+    <h2>Create Your Simple Resume</h2>
+
+    <input type="text" id="name" placeholder="Your Name"><br><br>
+    <input type="text" id="skill" placeholder="Your Skills"><br><br>
+
+    <button onclick="generateResume()">Generate Resume</button>
+
+    <p id="output"></p>
+</section>
+
+<script>
+function generateResume() {
+    var name = document.getElementById("name").value;
+    var skill = document.getElementById("skill").value;
+
+    document.getElementById("output").innerHTML =
+    "<h3>" + name + "</h3><p>Skills: " + skill + "</p>";
+}
+</script>
+
+</body>
+</html>
